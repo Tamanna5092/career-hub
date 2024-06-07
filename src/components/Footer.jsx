@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -8,9 +9,9 @@ const Footer = () => {
         <h1 className="text-white text-4xl font-extrabold">CareerHub</h1>
         <p>There are many variations of passages <br /> of Lorem Ipsum , but the majority have <br /> suffered alteration in some form.</p>
         <div className="flex gap-4 mt-5">
-        <a href="">facebook</a>
-        <a href="">facebook</a>
-        <a href="">facebook</a>
+        <a href=""><FaFacebook className="text-2xl"></FaFacebook></a>
+        <a href=""><FaTwitterSquare className="text-2xl"></FaTwitterSquare></a>
+        <a href=""><FaInstagram className="text-2xl"></FaInstagram></a>
         </div>
       </aside>
       <nav>
