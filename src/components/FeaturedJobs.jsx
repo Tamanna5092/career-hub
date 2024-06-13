@@ -14,8 +14,8 @@ const FeaturedJobs = () => {
   return (
     <div>
       <div>
-        <h1 className="text-5xl font-extrabold text-center">
-          Featured Jobs: {jobs.length}
+        <h1 className="text-5xl font-extrabold text-center mb-4">
+          Featured Jobs
         </h1>
         <p className="text-[#757575] font-medium text-center">
           Explore thousands of job opportunities with all the information you
@@ -27,8 +27,10 @@ const FeaturedJobs = () => {
             jobs.slice(0, dataLength).map(job => <Job key={job.id} job={job}></Job>)
         }
         </div>
+        <div className="mt-10 mb-32 text-center">
         <div className={dataLength === jobs.length ? 'hidden' : ''}>
-          <button onClick={() => setDataLength(jobs.length)} className="btn btn-primary">Show All Jobs</button>
+          <button onClick={() => setDataLength(jobs.length)} className="btn bg-gradient-to-r from-[#7E90FE] from-0% to-[#9873FF] to-100% text-white font-extrabold text-center px-7 py-4">Show All Jobs</button>
+        </div>
         </div>
     </div>
   );

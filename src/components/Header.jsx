@@ -39,7 +39,7 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">CareerHub</a>
+        <a className="text-3xl font-extrabold">CareerHub</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -47,7 +47,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Applying Now</a>
+        <a className="btn bg-gradient-to-r from-[#7E90FE] from-0% to-[#9873FF] to-100% text-white font-extrabold py-4 px-7">Applying Now</a>
       </div>
     </div>
   );

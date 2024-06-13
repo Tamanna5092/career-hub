@@ -43,7 +43,7 @@ const AppliedJobs = () => {
   }, [jobs]);
 
   return (
-    <div className="">
+    <div>
       <h1 className="text-2xl text-center bg-gradient-to-r from-[#7E90FE0D] from-0% to-[#9873FF0D] to-100% py-28">
         Applied Jobs: {appliedJobs.length}
       </h1>
@@ -65,21 +65,21 @@ const AppliedJobs = () => {
         {displayJobs.map((job) => (
           <li key={job.id}> 
             <div className="flex flex-col lg:flex-row my-4 p-6 border">
-              <div className="h-60 w-60 bg-base-200 text-center border-4">
+              <div className="h-60 w-60 bg-base-200 text-center">
                 <img
-                  className="rounded-lg shadow-2xl justify-center"
+                  className="rounded-lg shadow-2xl "
                   src={job.logo}
                   alt=""
                 />
               </div>
               <div className="flex flex-col justify-between w-full md:flex-row lg:flex-row ml-8">
-                <div className="bg-yellow-200 p-4">
+                <div className="p-4">
                   <h1 className="text-2xl font-extrabold">{job.job_title}</h1>
                   <p className="text-xl font-semibold text-[#757575] my-4">{job.company_name}</p>
-                  <button className="btn text-[#7E90FE] border-[#7E90FE] mr-2 px-6">
+                  <button className="btn bg-white text-[#7E90FE] border-[#7E90FE] mr-2 px-6">
                     {job.remote_or_onsite}
                   </button>
-                  <button className="btn text-[#7E90FE] border-[#7E90FE] px-6">
+                  <button className="btn bg-white text-[#7E90FE] border-[#7E90FE] px-6">
                     {job.job_type}
                   </button>
                   <div className="flex gap-6 text-[#757575] text-xl font-semibold my-4">
@@ -94,7 +94,7 @@ const AppliedJobs = () => {
                   </div>
                 </div>
                 <div className="top-50% text-center items-center justify-center">
-                  <button className="bg-gradient-to-r from-[#7E90FE] from-0% to-[#9873FF] to-100% py-4 px-5 rounded-lg">
+                  <button className="bg-gradient-to-r from-[#7E90FE] from-0% to-[#9873FF] to-100% text-white font-extrabold py-4 px-6 rounded-lg">
                     View Details
                   </button>
                 </div>

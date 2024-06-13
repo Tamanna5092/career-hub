@@ -21,15 +21,15 @@ const JobDetails = () => {
 
     return (
         <div>
-            <h1 className='text-3xl font-extrabold text-center'>Job Details</h1>
-            <div className='grid gap-6 md:grid-cols-5'>
-                <div className='border-4 md:col-span-3 text-[#757575] space-y-6'>
+            <h1 className='text-3xl font-extrabold text-center bg-gradient-to-r from-[#7E90FE0D] from-0% to-[#9873FF0D] to-100% py-24'>Job Details</h1>
+            <div className='grid gap-6 md:grid-cols-5 my-32'>
+                <div className='md:col-span-3 text-[#757575] space-y-6'>
                     <p className='font-medium'><span className='text-black font-extrabold'>Job Description:</span> {job.job_description}</p>
                     <p className='font-medium'><span className='text-black font-extrabold'>Job Responsibility:</span> {job.job_responsibility}</p>
                     <p className='font-medium'><span className='text-black font-extrabold'>Education Requirement:</span> <br /> <br /><span>{job.educational_requirements}</span></p>
                     <p className='font-medium'><span className='text-black font-extrabold'>Experience: <br /> <br /></span> {job.experiences}</p>
                 </div>
-                <div className='border-4 md:col-span-2 h-fit'>
+                <div className='md:col-span-2 h-fit'>
                     <div className='bg-gradient-to-r from-[#7E90FE1A] to-[#9873FF1A] text-[#757575] p-8'>
                     <h3 className='text-xl text-black font-extrabold'>Job Details</h3>
                     <hr />
